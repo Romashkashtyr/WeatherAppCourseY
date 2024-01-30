@@ -10,6 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:scaleType="fitXY"
         android:src="@drawable/weather"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +43,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/aubrey"
-                android:text="20.07.2024 1:00"
+                android:text="20.07.2024 13:00"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -156,7 +157,11 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/cardView" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
